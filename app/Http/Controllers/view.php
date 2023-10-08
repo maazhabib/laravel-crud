@@ -65,7 +65,7 @@ class view extends Controller
                     ->where('id',$id)
                     ->update
                     ([
-                        'name' => $update7->name,
+                        'name' => $update->name,
                         'email' => $update->email,
                         'phone' => $update->phone
 
