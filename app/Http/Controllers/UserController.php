@@ -33,6 +33,15 @@ class UserController extends Controller
 
     }
 
+    public function viewUser(string $id){
+
+        $user = DB::table('crud_data')->where('id' , $id)->get();
+        return $user;
+
+    }
+
+
+
     public function addUser(Request $add)
     {
         $user = DB::table('crud_data')

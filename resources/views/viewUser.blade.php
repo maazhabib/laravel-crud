@@ -27,6 +27,7 @@
                     <th scope="col">NAME</th>
                     <th scope="col">EMAIL</th>
                     <th scope="col">PHONE</th>
+                    <th scope="col">VIEW</th>
                     <th scope="col">UPDATE</th>
                     <th scope="col">DELETE</th>
                 </tr>
@@ -39,6 +40,7 @@
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}</td>
                         <td>{{ $user->phone }}</td>
+                        <td><a href="{{ route('view.page' , $user->id) }}" class="btn btn-success btn-sm">VIEW</a></td>
                         <td><a href="{{ route('update.page' , $user->id) }}" class="btn btn-warning btn-sm">UPDATE</a></td>
                         <td><a href="{{ route('delete.user' , $user->id) }}" class="btn btn-danger btn-sm">DELETE</a></td>
                     </tr>
